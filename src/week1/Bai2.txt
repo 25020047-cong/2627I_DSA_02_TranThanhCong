@@ -1,0 +1,7 @@
+a, do tất cả các phẩn tử từ 1 đến n-1 đều được nối với 0 nên ta có duy nhất 1 thành phần liên thông
+b, union(0,1): 1 lần, union(0,2): 2 lần,..., union(0,n-1): n-1 lần
+Tổng: 1 + 2 + ... + (n-1) = n(n-1)/2 ~ (1/2)n^2
+-> ~ (1/2)n^2
+c, mỗi lần truy cập thuật toán là n - 1 lần, mỗi lần cập nhật là n - 1
+-> tổng số lần là  2(n - 1) + 1 -> O(n)
+d, do 0 là root gốc của tất cả các val nên dừng ngay tại find(0) chỉ sau 1 lần truy cập mảng

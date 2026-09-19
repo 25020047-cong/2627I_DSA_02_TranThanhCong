@@ -1,0 +1,5 @@
+ta thấy :
+cây gốc 0 có size là 4
+cây gốc 4 có size là 4
+9 union với 8 nên 8 -> 8,9 thuộc câu có size >= 2
+-> parend[8] = 0,4,8

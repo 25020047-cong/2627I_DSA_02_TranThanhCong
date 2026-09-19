@@ -1,0 +1,2 @@
+không được vì khi union(0,5) cây chứa 0 có size là 7 , cây chứa 5 có size là 3
+thì 5 phải là con của 0
