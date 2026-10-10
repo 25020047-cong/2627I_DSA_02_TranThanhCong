@@ -1,0 +1,36 @@
+Loại dữ liệu           Kích thước  InsertionSort(ms)    MergeSort(ms)  Nhanh hơn
+----------------------------------------------------------------------------------
+Ngẫu nhiên                   1000              0.163            0.157      Merge
+Ngẫu nhiên                   5000              4.362            0.771      Merge
+Ngẫu nhiên                  10000             13.200            1.649      Merge
+Ngẫu nhiên                  50000            335.185            6.503      Merge
+Ngẫu nhiên                 100000           1169.474           14.960      Merge
+
+Tăng dần                     1000              0.002            0.012  Insertion
+Tăng dần                     5000              0.012            0.047  Insertion
+Tăng dần                    10000              0.020            0.087  Insertion
+Tăng dần                    50000              0.077            0.504  Insertion
+Tăng dần                   100000              0.153            1.471  Insertion
+
+Giảm dần                     1000              0.188            0.079      Merge
+Giảm dần                     5000              4.490            0.266      Merge
+Giảm dần                    10000             20.117            0.705      Merge
+Giảm dần                    50000            532.311            4.007      Merge
+Giảm dần                   100000           2324.960            8.061      Merge
+
+Gần như sắp xếp              1000              0.010            0.036  Insertion
+Gần như sắp xếp              5000              0.069            0.147  Insertion
+Gần như sắp xếp             10000              0.281            0.256      Merge
+Gần như sắp xếp             50000              7.629            1.894      Merge
+Gần như sắp xếp            100000             29.004            6.182      Merge
+
+Nhiều phần tử trùng          1000              0.179            0.104      Merge
+Nhiều phần tử trùng          5000              3.439            0.435      Merge
+Nhiều phần tử trùng         10000              9.219            0.828      Merge
+Nhiều phần tử trùng         50000            232.444            4.167      Merge
+Nhiều phần tử trùng        100000           1051.816           13.264      Merge
+Kết luận:
+ Merge Sort cho thời gian ổn định và tăng chậm trên mọi loại dữ liệu, đúng với O(n log n).
+ Insertion Sort chỉ có lợi khi mảng đã sắp xếp hoặc gần như sắp xếp với kích thước nhỏ,
+ còn với dữ liệu ngẫu nhiên hoặc ngược thứ tự thì không phù hợp khi n lớn.
+ Đổi lại, Merge Sort cần thêm O(n) bộ nhớ cho mảng phụ.
